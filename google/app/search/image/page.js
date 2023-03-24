@@ -1,7 +1,7 @@
 import React from "react";
 
 const ImageSearchPage = () => {
-	return <div>page</div>;
+	return <div>imagepage</div>;
 };
 
 export default ImageSearchPage;

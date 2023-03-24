@@ -21,4 +21,7 @@ body {
 	.link {
 		@apply hover:underline cursor-pointer;
 	}
+	.header-icon {
+		@apply text-4xl bg-transparent hover:bg-gray-200 p-2 cursor-pointer rounded-full;
+	}
 }
