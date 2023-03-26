@@ -16,7 +16,7 @@ const PaginationButtons = () => {
 				<Link
 					href={`${pathname}?searchTerm=${searchTerm}&start=${startIndex - 10}`}
 				>
-					<div className="flex items-center space-x-4 hover:underline cursor-pointer">
+					<div className="flex items-center space-x-6 hover:underline cursor-pointer">
 						<p>Previous</p>
 						<BsChevronLeft />
 					</div>
@@ -26,7 +26,7 @@ const PaginationButtons = () => {
 				<Link
 					href={`${pathname}?searchTerm=${searchTerm}&start=${startIndex + 10}`}
 				>
-					<div className="flex items-center space-x-4 hover:underline cursor-pointer">
+					<div className="flex items-center space-x-6 hover:underline cursor-pointer">
 						<BsChevronRight />
 						<p>Next</p>
 					</div>
