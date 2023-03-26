@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import PaginationButtons from "./PaginationButtons";
 
 const ImageSearchResults = ({ results }) => {
 	return (
 		<div className="sm:pb-24 pb-40 mt-4">
-			<div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-3 gap-3 mb-10">
+			<div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-6 gap-3 mb-10">
 				{results.items.map((result) => (
 					<div key={result.link} className="group">
 						<div className="bg-gray-100 rounded-xl items-center flex justify-center">
@@ -26,6 +27,9 @@ const ImageSearchResults = ({ results }) => {
 						</div>
 					</div>
 				))}
+			</div>
+			<div className="ml-8 mb-10">
+				<PaginationButtons />
 			</div>
 		</div>
 	);
