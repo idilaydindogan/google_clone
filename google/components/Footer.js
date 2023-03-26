@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
 	return (
-		<footer className="absolute bottom-0 text-sm text-gray-700 bg-[#f2f2f2] w-full">
+		<footer className="absolute bottom-0 text-sm text-gray-500 bg-[#f2f2f2] w-full">
 			<div className="border-b px-10 py-3 ">
 				<CountryLookUp />
 			</div>

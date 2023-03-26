@@ -21,7 +21,7 @@ const SearchHeader = () => {
 				<div className="flex-1">
 					<SearchBox />
 				</div>
-				<div className=" hidden md:inline-flex space-x-2">
+				<div className=" hidden md:inline-flex space-x-2 text-gray-600">
 					<RiSettings3Line className="header-icon" />
 					<TbGridDots className="header-icon" />
 				</div>
