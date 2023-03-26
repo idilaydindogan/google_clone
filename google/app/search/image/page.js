@@ -10,7 +10,7 @@ const ImageSearcgPage = async ({ searchParams }) => {
 
 	const data = await response.json();
 	const results = data.items;
-	console.log("results are", data);
+
 	if (!response.ok) {
 		throw new Error("Something went wrong!");
 	}
