@@ -1,4 +1,4 @@
-import SearchHeader from "@/components/SearchHeader";
+import SearchHeader from "components/SearchHeader";
 
 export const metadata = {
 	title: "Create Next App",

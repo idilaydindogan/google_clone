@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import WebSearchResults from "@/components/WebSearchResults";
+import WebSearchResults from "components/WebSearchResults";
 
 const WebSearcgPage = async ({ searchParams }) => {
 	const startIndex = searchParams.start || 1;
