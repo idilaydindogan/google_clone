@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
 	return (
 		<footer className="absolute bottom-0 text-sm text-gray-700 bg-[#f2f2f2] w-full">
-			<div className="border-b px-12 py-3 ">
+			<div className="border-b px-10 py-3 ">
 				<CountryLookUp />
 			</div>
 			<div className="flex flex-col sm:flex-row sm:justify-around items-center py-3 space-y-5">

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import WebSearchResults from "@/components/WebSearchResults";
 
 const WebSearcgPage = async ({ searchParams }) => {
 	const response = await fetch(
@@ -8,13 +9,17 @@ const WebSearcgPage = async ({ searchParams }) => {
 
 	const data = await response.json();
 	const results = data.items;
+	console.log("results are", data);
+	if (!response.ok) {
+		throw new Error("Something went wrong!");
+	}
 
 	if (!results) {
 		return (
 			<div className="flex flex-col justify-center items-center pt-10">
 				<h1 className="text-3xl mb-4">No Results Found</h1>
 				<p className="text-lg">
-					Try searcing something else or go back to homepage{" "}
+					Try searching something else or go back to homepage{" "}
 					<Link className="text-blue-500" href="/">
 						Home
 					</Link>
@@ -22,12 +27,7 @@ const WebSearcgPage = async ({ searchParams }) => {
 			</div>
 		);
 	}
-	return (
-		<>
-			{results &&
-				results.map((result) => <h1 KEY={result.cacheId}>{result.title}</h1>)}
-		</>
-	);
+	return <>{results && <WebSearchResults results={data} />}</>;
 };
 
 export default WebSearcgPage;
